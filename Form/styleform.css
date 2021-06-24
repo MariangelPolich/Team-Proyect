@@ -1,0 +1,48 @@
+
+body {
+    background-image: url(../Styles/imágenes/fondocolores.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+ main {
+     height: 500px;
+ }
+
+.social {
+    position: fixed ;
+    right: 0%;
+    top: 40%;
+    width: 60px;
+    background-color: rgb(2, 2, 2);
+}
+
+.social a {
+    display: block;
+    color: white;
+    padding: 15px;
+}
+
+#contenedortransparente {
+    border:black solid 1px;
+    background-color: rgba(245, 243, 242, 0.31);
+
+}
+#boton:hover {
+    background-color: rgb(2, 2, 2);
+    color: seashell;
+    transition: 0.3s;
+
+}   
+footer {
+    background-color: rgb(53, 53, 61);
+    color:blanchedalmond;    
+}
+#nombrebot {
+    text-align: center;
+    font-family:'Anton', sans-serif;
+}
+#iconito {
+    color: blanchedalmond;
+    }

@@ -1,0 +1,54 @@
+
+body{
+background-image: url('../Styles/imágenes/fondocolores.png');    
+}
+
+.social {
+    position: fixed ;
+    right: 0%;
+    top: 40%;
+    width: 60px;
+    background-color: rgb(2, 2, 2);
+}
+
+.social a {
+    display: block;
+    color: white;
+    padding: 15px;
+}
+
+.top {
+background-color: black;
+
+}
+.carousel-item {
+    height: 500px;
+    background-color: black;
+    opacity: 100%;
+}
+#caps2 {
+    color:black;
+}
+.socialbot {
+    display: inline-block;
+        color:blanchedalmond;
+        
+    }
+    #claridadr {
+        color: rgba(255, 249, 212, 0.884);
+        text-shadow: 2px 2px 4px #000000;
+    text-decoration: rgb(14, 12, 12);    
+    }
+    
+/* -----Aquí el estilo del footer -------*/
+footer {
+    background-color: rgb(53, 53, 61);
+    color:blanchedalmond;    
+}
+#nombrebot {
+    text-align: center;
+    font-family:'Anton', sans-serif;
+}
+#iconito {
+    color: blanchedalmond;
+    }

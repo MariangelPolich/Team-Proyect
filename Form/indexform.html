@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styleform.css">
+</head>
+
+<body>
+    <div class="social">
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/home"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../Main/main.html"> <img src="../Styles/imágenes/logo chico.png" alt="" width="225"
+                    height="90"></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../Main/main.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Equipo/indexequipo.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Padrines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Adoptá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Consultas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container d-flex">
+        <div class="row container d-grid gap-5 col-6 mx-auto my-4 py-4" id="contenedortransparente">
+            <button class="btn btn-light fs-3" id="boton" type="button" data-bs-toggle="modal"
+                data-bs-target="#modalconsultas">Consultas</button>
+            <button class="btn btn-light fs-3" id="boton" type="button" data-bs-toggle="modal"
+                data-bs-target="#modaladoptar">Quiero adoptar</button>
+            <button class="btn btn-light fs-3" id="boton" type="button" data-bs-toggle="modal"
+                data-bs-target="#modalpadrinar">Quiero ser padrine</button>
+        </div>
+    </main>
+    <div class="modal fade" id="modalconsultas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalconsultas" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloconsulta">¿Tenés una consulta para nuestro equipo?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formconsultar" target="_self">
+                        <div class="input-group">
+                            <span class="input-group-text">Nombre y Apellido</span>
+                            <input type="text" aria-label="Nombre" class="form-control">
+                            <input type="text" aria-label="Apellido" class="form-control">
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Dirección de @mail</label>
+                            <input type="email" class="form-control" placeholder="señoradelosgatos@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Escribinos acá:</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit" value="submit" form="formconsultar">Enviar</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="modal fade" id="modaladoptar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modaladoptar" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¿Te interesa adoptar un hije perruno o gatuno?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <p>Postulate con este formulario y nuestro equipo te contactará pronto, para conocerte mejor y darte
+                        información sobre las necesidades del pichiche/gatite de tu interés. Gracias!</p>
+                    <form id="formadoptar" target="_self">
+                        <div class="input-group">
+                            <span class="input-group-text">Nombre y Apellido</span>
+                            <input type="text" aria-label="Nombre" class="form-control">
+                            <input type="text" aria-label="Apellido" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="Edad" placeholder="Edad" min="5" max="100">
+                            <label for="Edad">Tu edad</label>
+                        </div>
+                        <br>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="Teléfono" placeholder="Teléfono">
+                            <label for="Teléfono">Tu número de teléfono</label>
+                        </div>
+                        <br>
+                        <label for="Dirección" class="form-label">Dirección de adopción</label>
+                        <div class="input-group flex-nowrap">  
+                            <span class="input-group-text">Provincia</span>
+                            <input type="text" aria-label="Provincia" class="form-control">
+                            
+                            <span class="input-group-text">Localidad</span>
+                            <input type="text" aria-label="Localidad" class="form-control">
+                            
+                            <span class="input-group-text">Ciudad</span>
+                            <input type="text" aria-label="Ciudad" class="form-control">
+                            
+                            <span class="input-group-text">Calle</span>
+                            <input type="text" aria-label="Calle" class="form-control">
+                            
+                            <span class="input-group-text">Número</span>
+                            <input type="number" aria-label="Número" class="form-control">
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Dirección de @mail</label>
+                            <input type="email" class="form-control" placeholder="señoradelosgatos@ejemplo.com">
+                        </div>
+                        <br>
+                        <label for="Apadrinade" class="form-label">Rescatade de tu interés:</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Perrite" aria-label="Perrite">
+                            <input type="text" class="form-control" placeholder="Gatite" aria-label="Gatite">
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit" value="submit" form="formadoptar">Enviar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="modalpadrinar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalpadrinar" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¿Querés apadrinar alguno de nuestros rescatades?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <p>Postulate con este formulario para nuestro programa de padrines, apoyando económicamente con tu
+                        donación a uno de nuestros rescatades. Una vez enviado el formulario, nuestro equipo te remitirá
+                        un mail con el link correspondiente a las características de la donación que seleccionaste.
+                        Muchísimas gracias por colaborar!</p>
+                    <form id="formpadrinar" target="_self">
+                        <div class="input-group">
+                            <span class="input-group-text">Nombre y Apellido</span>
+                            <input type="text" aria-label="Nombre" class="form-control">
+                            <input type="text" aria-label="Apellido" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="Teléfono" placeholder="Teléfono">
+                            <label for="Teléfono">Tu número de teléfono</label>
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Dirección de @mail</label>
+                            <input type="email" class="form-control" placeholder="señoradelosgatos@ejemplo.com">
+                        </div>
+                        <br>
+                        <label for="Apadrinade" class="form-label">Apadrinade de tu interés:</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Perrite" aria-label="Perrite">
+                            <input type="text" class="form-control" placeholder="Gatite" aria-label="Gatite">
+                        </div>
+                        <br>
+                        <select class="form-select" aria-label="Tipo de donación">
+                            <option selected>Tipo de donación</option>
+                            <option value="1">Única</option>
+                            <option value="2">Mensual por tarjeta de crédito</option>
+                        </select>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Cantidad">
+                            <span class="input-group-text">Cantidad a donar</span>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit" value="submit" form="formpadrinar">Enviar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col sm-0 md-12" id="nombrebot">
+              <h1> Tu Mascota Online </h1>
+            </div>
+          </div>  
+        </div>  
+        <div class="container mt-0">
+        <div class="row">
+          <div class="col sm-4">
+          <img src="../Styles/imágenes/logochico.png"> 
+          </div>
+          <div class="col sm-4"> 
+            <h3 class="h3">VISITANOS EN:</h3>
+            <h4 class="h4">Las Piedras 112</h4>
+            <h4 class="h5">San Miguel de Tucumán</h4>
+            <h5 class="h5">Tucumán - Argentina </h5>
+          </div> 
+          <div class="col sm-4 "> 
+            <h3 class=h3> SEGUINOS EN:</h3>
+            <div class="socialbot">
+              <a href="https://www.instagram.com/"><i id="iconito"  class="fab fa-instagram-square fa-2x"></i></a>
+              <a href="https://www.facebook.com/"><i  id="iconito" class="fab fa-facebook fa-2x"></i></a>
+              <a href="https://twitter.com/home"><i  id="iconito" class="fab fa-twitter fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
+        </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
